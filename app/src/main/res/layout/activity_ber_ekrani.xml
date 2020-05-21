@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back_ground">
+    android:background="@drawable/bg_image">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -156,7 +156,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
-        android:background="@drawable/rectangle_copy_3"
+        android:background="@drawable/rectangle_bg_image"
         android:text="Adresi Gonder"
         android:textColor="#ffffff"
         android:layout_marginBottom="15dp"/>
@@ -167,7 +167,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
-        android:background="@drawable/rectangle_copy_3"
+        android:background="@drawable/rectangle_bg_image"
         android:text="Randevularimi Goster"
         android:textColor="#ffffff"
         android:layout_marginBottom="15dp"/>

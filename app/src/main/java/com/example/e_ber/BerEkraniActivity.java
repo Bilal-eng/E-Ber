@@ -228,7 +228,7 @@ public class BerEkraniActivity extends AppCompatActivity {
                     berRef.push().setValue(berber);
                     btnSave.setEnabled(false);
 //                    btnSave.setBackgroundColor(getResources().getColor(R.color.gri));
-                    btnSave.setBackground(getResources().getDrawable(R.drawable.rectangle_copy_3));
+                    btnSave.setBackground(getResources().getDrawable(R.drawable.rectangle_bg_image));
                     Toast.makeText(BerEkraniActivity.this,"Adresiniz Basari ile  gonderilmistir !",Toast.LENGTH_LONG).show();
                     Intent intent= new Intent(BerEkraniActivity.this,BerBer_Musterti_Secmek.class);
                     startActivity(intent);

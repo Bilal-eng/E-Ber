@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Kuafor_Musteri"
-    android:background="@drawable/back_ground">
+    android:background="@drawable/bg_image">
 
 
     <Button
@@ -15,7 +15,7 @@
         android:text=" Kuafor"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:background="@drawable/rectangle_copy_3"
+        android:background="@drawable/rectangle_bg_image"
         android:layout_marginBottom="15dp"/>
     <Button
         android:id="@+id/btnMusteri"
@@ -24,7 +24,7 @@
         android:layout_below="@id/btnKuafor"
         android:layout_centerHorizontal="true"
         android:text="Musteri"
-        android:background="@drawable/rectangle_copy_3"
+        android:background="@drawable/rectangle_bg_image"
         />
 
 </RelativeLayout>

@@ -1,28 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
     tools:context=".OnayActivity"
     android:orientation="vertical"
     android:layout_centerVertical="true">
 
 
-
-
-    <EditText
-        android:id="@+id/etCodeone"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:hint="Enter code"/>
-    <Button
-        android:id="@+id/btnSend"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ONAY">
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
 
-    </Button>
+        <EditText
+            android:id="@+id/etCodeone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="32dp"
+            android:inputType="numberDecimal"
+            android:backgroundTint="@android:color/white"
+            android:hint="@string/kodunuzu_buraya_giriniz"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/white_degrees_color" />
 
 
-</LinearLayout>
+        <!--        <EditText-->
+<!--            android:id="@+id/etCodeone"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:hint="Enter code"/>-->
+<!--        <Button-->
+<!--            android:id="@+id/btnSend"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="ONAY"/>-->
+
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/rectangle_bg_image"
+            android:text="@string/onaylayiniz"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvSendCodeAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:text="@string/tekrar_kod_g_nder"
+            android:textSize="14.3sp" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

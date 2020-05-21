@@ -4,10 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -29,6 +31,7 @@ public class OnayActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private EditText etCodeone;
     private Button btnSend;
+    private TextView tvSendCodeAgain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,8 +41,9 @@ public class OnayActivity extends AppCompatActivity {
         mAuth=FirebaseAuth.getInstance();
         etCodeone=findViewById(R.id.etCodeone);
         btnSend=findViewById(R.id.btnSend);
+        tvSendCodeAgain = findViewById(R.id.tvSendCodeAgain);
        String phonenumber=getIntent().getStringExtra("phone Number");
-       sendVerificationCode(phonenumber);
+//       sendVerificationCode(phonenumber);
        findViewById(R.id.btnSend).setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
@@ -48,6 +52,8 @@ public class OnayActivity extends AppCompatActivity {
 
            }
        });
+
+        tvSendCodeAgain.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG);
 
     }
 
@@ -76,9 +82,9 @@ private void verifyCode(String code){
     }
 
 
-    private  void sendVerificationCode (String number){
-        PhoneAuthProvider.getInstance().verifyPhoneNumber(number,60,TimeUnit.SECONDS, TaskExecutors.MAIN_THREAD,mCallback);
-}
+//    private  void sendVerificationCode (String number){
+//        PhoneAuthProvider.getInstance().verifyPhoneNumber(number,60,TimeUnit.SECONDS, TaskExecutors.MAIN_THREAD,mCallback);
+//}
 
 private PhoneAuthProvider.OnVerificationStateChangedCallbacks
         mCallback =new PhoneAuthProvider.OnVerificationStateChangedCallbacks()

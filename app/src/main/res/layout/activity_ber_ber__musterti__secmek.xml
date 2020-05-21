@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BerBer_Musterti_Secmek"
-    android:background="@drawable/back_ground"
+    android:background="@drawable/bg_image"
     >
     <Button
         android:id="@+id/btnKadinKuaforu"
@@ -14,7 +14,7 @@
         android:text="Kadin Kuaforu"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:background="@drawable/rectangle_copy_3"
+        android:background="@drawable/rectangle_bg_image"
         android:layout_marginBottom="15dp"/>
     <Button
         android:id="@+id/btnErkekKuaforu"
@@ -23,7 +23,7 @@
         android:layout_below="@id/btnKadinKuaforu"
         android:layout_centerHorizontal="true"
         android:text="Erkek Kuaforu"
-        android:background="@drawable/rectangle_copy_3"
+        android:background="@drawable/rectangle_bg_image"
         android:layout_marginBottom="15dp"
         />
     <Button
@@ -33,7 +33,7 @@
         android:layout_below="@id/btnErkekKuaforu"
         android:layout_centerHorizontal="true"
         android:text="Randevularim"
-        android:background="@drawable/rectangle_copy_3"
+        android:background="@drawable/rectangle_bg_image"
         android:layout_marginBottom="20dp"
         />
     </RelativeLayout>

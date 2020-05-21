@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">E-Ber</string>
+    <string name="isim">İsiminiz</string>
+    <string name="telefon_giriniz">Numaranızı Giriniz</string>
+    <string name="giris_yapin">Giriş yapınız</string>
+    <string name="phone_format">+90( 5 - - )   - - -   - -  - -</string>
+    <string name="kodunuzu_buraya_giriniz">Kodunuzu buraya giriniz</string>
+    <string name="onaylayiniz">Onaylayınız</string>
+    <string name="tekrar_kod_g_nder">Tekrar Kod Göndereniz</string>
 </resources>
