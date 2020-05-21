@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_margin="10dp">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:hint="TARIH :"
+           />
+       <TextView
+           android:id="@+id/tvTarih"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           />
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Kuaforun Ismi : "
+
+            />
+        <TextView
+            android:id="@+id/tvKuaforunIsmi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Durum :"
+        android:layout_marginRight="30dp"
+        />
+    <Button
+        android:id="@+id/btnBeklemde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beklemede"
+        android:background="@color/colorAccent"
+        android:layout_marginRight="10dp"
+        />
+    <Button
+        android:id="@+id/btnOnaylma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Onyalandi"
+        android:background="@color/colorPrimary"
+        />
+</LinearLayout>
+</LinearLayout>

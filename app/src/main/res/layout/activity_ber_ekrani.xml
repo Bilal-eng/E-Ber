@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berberin Adresi"
+            android:textColor="#ffffff "
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageButton
+            android:id="@+id/ivbackone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_2e"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingTop="30dp"
+            android:paddingBottom="20dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/toolbar_bg_re"
+        android:layout_margin="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="IL *"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:textSize="21dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            />
+        <Spinner
+            android:id="@+id/srIl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/ilce_bg"
+            android:layout_weight="1"
+
+            >
+            <TextView
+                android:id="@+id/tvilce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Ilce *"
+                android:textSize="21dp"
+                android:layout_marginLeft="10dp"
+                android:textColorHint="@android:color/white"
+                android:layout_gravity="center"
+                />
+            <Spinner
+                android:id="@+id/srIlce"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/colorPrimary"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle_copy_two"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            >
+            <TextView
+                android:id="@+id/tvmah"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Mahalle *"
+                android:textSize="21dp"
+                android:layout_marginLeft="10dp"
+                android:textColorHint="@android:color/white"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                />
+            <Spinner
+                android:id="@+id/srMah"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/colorPrimary"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/toolbar_bg_re"
+        android:layout_margin="10dp"
+        >
+        <EditText
+            android:id="@+id/etBerStoreName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:hint="Berber Dukkani"
+            android:textSize="21dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/transparent"
+            android:layout_gravity="center"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rectangle_copy_3"
+        android:text="Adresi Gonder"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/btnRandev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rectangle_copy_3"
+        android:text="Randevularimi Goster"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="15dp"/>
+    <ProgressBar
+        android:id="@+id/prloader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@android:color/white"
+        />
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground">
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/main_bg2"-->
+<!--        android:layout_alignParentEnd="true"/>-->
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/main_bg3"-->
+<!--        android:layout_alignParentEnd="true"/>-->
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_centerInParent="true">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            android:layout_margin="75dp"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile_copy"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                />
+
+
+            <EditText
+                android:id="@+id/etIsim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:hint="Isim"
+                android:paddingStart="32dp"
+                android:textColorHint="@color/wight"
+                android:backgroundTint="@color/wight"
+                android:textColor="@android:color/white"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/locked_copy"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                />
+
+
+            <EditText
+                android:id="@+id/etTelefon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/wight"
+                android:hint="Telefon Girin"
+                android:paddingStart="32dp"
+                android:textColorHint="@color/wight"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/white"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:id="@+id/btnGonder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_copy_3"
+                android:layout_centerInParent="true"
+                android:text="Giris yap"
+                android:textColor="#ffffff"
+
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

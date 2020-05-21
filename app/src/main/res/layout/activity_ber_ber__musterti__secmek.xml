@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BerBer_Musterti_Secmek"
+    android:background="@drawable/back_ground"
+    >
+    <Button
+        android:id="@+id/btnKadinKuaforu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kadin Kuaforu"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rectangle_copy_3"
+        android:layout_marginBottom="15dp"/>
+    <Button
+        android:id="@+id/btnErkekKuaforu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnKadinKuaforu"
+        android:layout_centerHorizontal="true"
+        android:text="Erkek Kuaforu"
+        android:background="@drawable/rectangle_copy_3"
+        android:layout_marginBottom="15dp"
+        />
+    <Button
+        android:id="@+id/btnRandevularim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnErkekKuaforu"
+        android:layout_centerHorizontal="true"
+        android:text="Randevularim"
+        android:background="@drawable/rectangle_copy_3"
+        android:layout_marginBottom="20dp"
+        />
+    </RelativeLayout>

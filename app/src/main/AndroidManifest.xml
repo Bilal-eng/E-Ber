@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.e_ber">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".RandevularimActivity"></activity>
+        <activity android:name=".Kuafor_Musteri"></activity>
+        <activity android:name=".Berberin_Adresi_Girmek" />
+        <activity android:name=".Erkek_Kuafor_Musteri" />
+        <activity android:name=".BerBer_Musterti_Secmek"></activity>
+        <activity android:name=".BerEkraniActivity"></activity>
+        <activity android:name=".RandevuIste" />
+        <activity android:name=".YorumlarOkumak" />
+        <activity android:name=".RandevuAlDegerlendir">
+
+
+
+
+        </activity>
+        <activity android:name=".BerBilgisiActivity"></activity>
+        <activity android:name=".IlIlce"></activity>
+        <activity android:name=".ErkekKadinActivity" />
+        <activity android:name=".OnayActivity" />
+        <activity android:name=".MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnayActivity"
+    android:orientation="vertical"
+    android:layout_centerVertical="true">
+
+
+
+
+    <EditText
+        android:id="@+id/etCodeone"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:hint="Enter code"/>
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ONAY">
+
+    </Button>
+
+
+</LinearLayout>
